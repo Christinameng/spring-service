@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-consumer" />
+        <module name="springmvc-provider" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springmvc-consumer" options="-parameters -Werror -Xlint:all -Xlint:-classfile -Xlint:-processing" />
+      <module name="springmvc-provider" options="-parameters -Werror -Xlint:all -Xlint:-classfile -Xlint:-processing" />
+    </option>
+  </component>
+</project>
